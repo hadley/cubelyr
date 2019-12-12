@@ -8,9 +8,22 @@ Authors@R:
              email = "hadley@rstudio.com"),
       person(given = "RStudio",
              role = "cph"))
-Description: An implementation of a data cube extracted out of dplyr for
-    backward compatibility.
+Description: An implementation of a data cube extracted out of
+    dplyr for backward compatibility.
 License: MIT + file LICENSE
+Depends: 
+    R (>= 3.2)
+Imports: 
+    dplyr,
+    glue,
+    pillar,
+    purrr,
+    rlang,
+    tibble,
+    tidyselect
+Suggests: 
+    testthat (>= 2.1.0)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.2
