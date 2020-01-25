@@ -1,5 +1,5 @@
 Package: cubelyr
-Title: A data cube dplyr backend
+Title: A Data Cube 'dplyr' Backend
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Hadley",
@@ -9,7 +9,7 @@ Authors@R:
       person(given = "RStudio",
              role = "cph"))
 Description: An implementation of a data cube extracted out of
-    dplyr for backward compatibility.
+    'dplyr' for backward compatibility.
 License: MIT + file LICENSE
 Depends: 
     R (>= 3.2)

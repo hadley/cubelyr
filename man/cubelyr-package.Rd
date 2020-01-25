@@ -4,10 +4,10 @@
 \name{cubelyr-package}
 \alias{cubelyr}
 \alias{cubelyr-package}
-\title{cubelyr: A data cube dplyr backend}
+\title{cubelyr: A Data Cube 'dplyr' Backend}
 \description{
 An implementation of a data cube extracted out of
-    dplyr for backward compatibility.
+    'dplyr' for backward compatibility.
 }
 \seealso{
 Useful links:
