@@ -354,8 +354,8 @@ find_index <- function(x, names) {
 
 #' @importFrom dplyr group_by
 #' @export
-group_by.tbl_cube <- function(.data, ..., add = FALSE, .drop = FALSE) {
-  groups <- dplyr::group_by_prepare(.data, ..., add = add)
+group_by.tbl_cube <- function(.data, ..., .drop = FALSE) {
+  groups <- dplyr::group_by_prepare(.data, ...)
 
   # Convert symbols to indices
   groups$data$groups <- match(groups$group_names, names(groups$data$dims))
