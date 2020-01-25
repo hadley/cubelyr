@@ -9,6 +9,14 @@
 An implementation of a data cube extracted out of
     dplyr for backward compatibility.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/hadley/cubelyr}
+  \item Report bugs at \url{https://github.com/hadley/cubelyr/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Hadley Wickham \email{hadley@rstudio.com}
 
