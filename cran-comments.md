@@ -1,4 +1,6 @@
-This is a resubmission to fix a broken URL.
+This is a resubmission to:
+* Update copyright year
+* Add return value documentation.
 
 ---
 
