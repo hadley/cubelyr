@@ -37,6 +37,7 @@
 #' Probably straightforward if you get the indexes right, and that's probably
 #' some straightforward array/tensor operation.
 #'
+#' @return A new data cube with class `tbl_cube`.
 #' @export
 #' @param dimensions A named list of vectors. A dimension is a variable
 #'   whose values are known before the experiment is conducted; they are
@@ -163,6 +164,7 @@ print.tbl_cube <- function(x, ...) {
 #' @param ... Passed on to individual methods; otherwise ignored.
 #' @param measure A measure name or index, default: the first measure
 #' @name as.table.tbl_cube
+#' @returns A table, data frame, or tibble, as appropriate.
 #' @export
 as.table.tbl_cube <- function(x, ..., measure = 1L) {
   ret <- x$mets[[measure]]
@@ -202,6 +204,7 @@ as_tibble.tbl_cube <- function(x, ...) {
 #' @param x an object to convert. Built in methods will convert arrays,
 #'   tables and data frames.
 #' @param ... Passed on to individual methods; otherwise ignored.
+#' @returns A `tbl_cube`.
 #' @export
 as.tbl_cube <- function(x, ...) UseMethod("as.tbl_cube")
 

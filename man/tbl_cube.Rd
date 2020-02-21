@@ -21,6 +21,9 @@ actually measured, and is not known in advance. The dimension of each
 array should be the same as the length of the dimensions. Measures are
 typically, but not always, continuous values.}
 }
+\value{
+A new data cube with class \code{tbl_cube}.
+}
 \description{
 A cube tbl stores data in a compact array format where dimension
 names are not needlessly repeated. They are particularly appropriate for

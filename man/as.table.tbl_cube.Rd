@@ -19,6 +19,9 @@
 
 \item{measure}{A measure name or index, default: the first measure}
 }
+\value{
+A table, data frame, or tibble, as appropriate.
+}
 \description{
 Supports conversion to tables, data frames, tibbles.
 

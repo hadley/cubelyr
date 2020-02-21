@@ -39,6 +39,9 @@ the \code{\link[=dimnames]{dimnames()}}.}
 
 \item{met_name}{a string to use as the name for the measure.}
 }
+\value{
+A \code{tbl_cube}.
+}
 \description{
 Coerce an existing data structure into a \code{tbl_cube}
 }
