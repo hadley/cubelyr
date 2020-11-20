@@ -4,7 +4,9 @@
 \name{nasa}
 \alias{nasa}
 \title{NASA spatio-temporal data}
-\format{A \link{tbl_cube} with 41,472 observations.}
+\format{
+A \link{tbl_cube} with 41,472 observations.
+}
 \usage{
 nasa
 }
