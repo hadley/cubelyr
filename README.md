@@ -1,6 +1,7 @@
 # cubelyr
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/hadley/cubelyr/workflows/R-CMD-check/badge.svg)](https://github.com/hadley/cubelyr/actions)
 <!-- badges: end -->
 
 cubelyr pulls the experimental `tbl_cube()` out of dplyr, so you can continue to use it if you want.

@@ -355,6 +355,13 @@ find_index <- function(x, names) {
   unlist(lapply(x[-1], find_index, names = names))
 }
 
+#' @importFrom dplyr ungroup
+#' @export
+ungroup.tbl_cube <- function(x, ...) {
+  x$groups <- NULL
+  x
+}
+
 #' @importFrom dplyr group_by
 #' @export
 group_by.tbl_cube <- function(.data, ..., .drop = FALSE) {
