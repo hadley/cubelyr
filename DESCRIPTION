@@ -12,7 +12,7 @@ Description: An implementation of a data cube extracted out of
     'dplyr' for backward compatibility.
 License: MIT + file LICENSE
 Depends: 
-    R (>= 3.2)
+    R (>= 3.3)
 Imports: 
     dplyr,
     glue,
