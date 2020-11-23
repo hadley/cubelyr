@@ -1,4 +1,6 @@
-# cubelyr (development version)
+# cubelyr 1.0.1
+
+usethis::use_version('patch')# cubelyr (development version)
 
 * Fixes for dplyr compatibility
 
