@@ -1,6 +1,6 @@
 Package: cubelyr
 Title: A Data Cube 'dplyr' Backend
-Version: 1.0.1
+Version: 1.0.1.9000
 Authors@R: 
     c(person(given = "Hadley",
              family = "Wickham",
