@@ -6,8 +6,7 @@
 \alias{cubelyr-package}
 \title{cubelyr: A Data Cube 'dplyr' Backend}
 \description{
-An implementation of a data cube extracted out of
-    'dplyr' for backward compatibility.
+An implementation of a data cube extracted out of 'dplyr' for backward compatibility.
 }
 \seealso{
 Useful links:
