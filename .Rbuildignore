@@ -6,3 +6,4 @@
 ^CRAN-RELEASE$
 ^\.github$
 ^revdep$
+^codecov\.yml$
