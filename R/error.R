@@ -138,7 +138,7 @@ parse_args <- function(x) {
 }
 
 parse_named_call <- function(x) {
-  map_chr(x, quo_text)
+  map_chr(as.list(x), quo_text)
 }
 
 
