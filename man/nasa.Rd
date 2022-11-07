@@ -12,7 +12,8 @@ nasa
 }
 \description{
 This data comes from the ASA 2007 data expo,
-\url{http://stat-computing.org/dataexpo/2006/}. The data are geographic and
+\url{https://community.amstat.org/jointscsg-section/dataexpo/dataexpo2006}.
+The data are geographic and
 atmospheric measures on a very coarse 24 by 24 grid covering Central
 America. The variables are: temperature (surface and air), ozone,
 air pressure, and cloud cover (low, mid, and high). All variables are
