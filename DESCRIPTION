@@ -1,6 +1,6 @@
 Package: cubelyr
 Title: A Data Cube 'dplyr' Backend
-Version: 1.0.1.9000
+Version: 1.0.2
 Authors@R: c(
     person("Hadley", "Wickham", , "hadley@rstudio.com", role = c("aut", "cre")),
     person("RStudio", role = "cph")
