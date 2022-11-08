@@ -43,5 +43,15 @@ the \code{\link[=dimnames]{dimnames()}}.}
 A \code{tbl_cube}.
 }
 \description{
-Coerce an existing data structure into a \code{tbl_cube}
+Coerce a matrix/array to a tbl_cube. The array must have row and column names
+and names of matrix/array dimensions must be provided if not present.
+}
+\examples{
+# array into ggplot to display with tiles
+m <- matrix(runif(100), 10, 10)
+rownames(m) <- colnames(m) <- letters[1:10]
+\dontrun{library(tidyverse)}
+\dontrun{mtib <- as_tibble(as.tbl_cube(m, met_name="brightness", dim_names=c("X", "Y")) )}
+\dontrun{ggplot(mtib, aes(x=X, y=Y)) + geom_tile(aes(colour=brightness, fill=brightness))}
+
 }

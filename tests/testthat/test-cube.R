@@ -40,6 +40,20 @@ test_that("coercion", {
 
   expect_message(cube_tbl <- as.tbl_cube(tbl), NA)
   expect_identical(cube, cube_tbl)
+  # Can we change the names of dimensions
+  cube <- as.tbl_cube(tbl, dim_names = c("A","B"))
+  expect_identical(cube$dims, list(A = letters[1:3], B = letters[1:5]))
+  # common use case of images/correlation matrices without named
+  # dimensions
+  tbl_as_mat <- unclass(tbl)
+  # remove the dimension names
+  names(dimnames(tbl_as_mat)) <- NULL
+  expect_error(cube <- as.tbl_cube(tbl_as_mat))
+  cube <- as.tbl_cube(tbl_as_mat, dim_names=c("A", "B"))
+  expect_identical(cube$dims, list(A = letters[1:3], B = letters[1:5]))
+  # Remove all the row and column names
+  expect_error(as.tbl_cube(undimname(tbl_as_mat)))
+
 })
 
 test_that("incomplete", {

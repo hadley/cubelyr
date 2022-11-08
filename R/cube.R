@@ -213,11 +213,28 @@ as.tbl_cube <- function(x, ...) UseMethod("as.tbl_cube")
 #' @param dim_names names of the dimensions. Defaults to the names of
 #'   the [dimnames()].
 #' @param met_name a string to use as the name for the measure.
+#' @description Coerce a matrix/array to a tbl_cube. The array must have row and column names
+#' and names of matrix/array dimensions must be provided if not present.
+#' @examples
+#' # array into ggplot to display with tiles
+#' m <- matrix(runif(100), 10, 10)
+#' rownames(m) <- colnames(m) <- letters[1:10]
+#' \dontrun{library(tidyverse)}
+#' \dontrun{mtib <- as_tibble(as.tbl_cube(m, met_name="brightness", dim_names=c("X", "Y")) )}
+#' \dontrun{ggplot(mtib, aes(x=X, y=Y)) + geom_tile(aes(colour=brightness, fill=brightness))}
+#'
 as.tbl_cube.array <- function(x, dim_names = names(dimnames(x)), met_name = deparse(substitute(x)),
                               ...) {
   force(met_name)
-
   dims <- dimnames(x)
+  if (is.null(dims)) {
+    stop("Array must have named rows and columns")
+  }
+  if (is.null(dim_names)) {
+    stop("Array must have named dimensions (i.e. !is.null(names(dimnames(x)))")
+  }
+
+  names(dims) <- dim_names
   dims <- lapply(dims, utils::type.convert, as.is = TRUE)
 
   mets <- setNames(list(undimname(x)), met_name)
